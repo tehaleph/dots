@@ -1,0 +1,6 @@
+set number
+syntax on
+set autoindent
+set expandtab
+set visualbell
+set scrolloff=999
