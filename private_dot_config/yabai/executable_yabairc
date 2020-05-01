@@ -1,0 +1,36 @@
+#!/usr/bin/env sh
+
+# Docs
+# https://github.com/koekeishiya/yabai/blob/master/doc/yabai.asciidoc#config
+
+# Debug
+yabai -m config debug_output		on
+
+# Global Settings
+yabai -m config mouse_follows_focus	on
+yabai -m config focus_follows_mouse	off
+yabai -m config window_placement	second_child
+yabai -m config window_topmost		on
+yabai -m config window_shadow		off
+yabai -m config split_ratio		0.5
+yabai -m config auto_balance		off
+yabai -m insert_feedback_color		#FFFFFF
+
+# Opacity
+yabai -m config window_opacity		on
+yabai -m config window_opacity_duration	1.0
+yabai -m config active_window_opacity	1.0
+yabai -m config normal_window_opacity	0.8
+
+# Mouse
+yabai -m config mouse_modifier		fn
+yabai -m config mouse_action1		move
+yabai -m config mouse_action2		resize
+
+# Space Settings
+yabai -m config layout			bsp
+yabai -m config top_padding		15
+yabai -m config bottom_padding		15
+yabai -m config left_padding		15
+yabai -m config right_padding		15
+yabai -m config window_gap		15
