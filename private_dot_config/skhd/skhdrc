@@ -1,0 +1,20 @@
+# focus window
+alt - h : yabai -m window --focus west
+alt - j : yabai -m window --focus north
+alt - k : yabai -m window --focus south
+alt - l : yabai -m window --focus east
+
+# balance size of windows
+shift + alt - 0 : yabai -m space --balance
+
+# toggle window zoom
+alt - f : yabai -m window --toggle zoom-fullscreen
+
+# float / unfloat window and center on screen
+alt - t : yabai -m window --toggle float;\
+          yabai -m window --grid 4:4:1:1:2:2
+
+# toggle sticky(+float), topmost, picture-in-picture
+alt - p : yabai -m window --toggle sticky;\
+          yabai -m window --toggle topmost;\
+          yabai -m window --toggle pip
