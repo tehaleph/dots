@@ -2,7 +2,7 @@
 	editor = vim
 [user]
 	signingkey = 0A541ABEE37D15EF
-	name = Shlyakhov Mikhail
+	name = Mikhail Shlyakhov
 	email = mike@aleph.space
 [gpg]
 	program = gpg
