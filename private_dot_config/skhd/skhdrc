@@ -18,3 +18,13 @@ alt - t : yabai -m window --toggle float;\
 alt - p : yabai -m window --toggle sticky;\
           yabai -m window --toggle topmost;\
           yabai -m window --toggle pip
+
+# fast focus desktop
+cmd + alt - x : yabai -m space --focus recent
+cmd + alt - 1 : yabai -m space --focus 1
+cmd + alt - 2 : yabai -m space --focus 2
+
+# send window to desktop and follow focus
+shift + cmd - z : yabai -m window --space next; yabai -m space --focus next
+shift + cmd - 1 : yabai -m window --space  1; yabai -m space --focus 1
+shift + cmd - 2 : yabai -m window --space  2; yabai -m space --focus 2
