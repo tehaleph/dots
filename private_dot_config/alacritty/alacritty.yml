@@ -8,32 +8,32 @@ font:
   normal:
     family: JetBrains Mono
     style: Regular
-# Colors (Cyberdyne)
+# Colors (ENCOM)
 colors:
   bright:
-    black: '#2e2e2e'
-    blue: '#c2e3ff'
-    cyan: '#e6e7fe'
-    green: '#d6fcba'
-    magenta: '#ffb2fe'
-    red: '#ffc4be'
+    black: '#555555'
+    blue: '#0000ff'
+    cyan: '#00cdcd'
+    green: '#00ee00'
+    magenta: '#ff00ff'
+    red: '#ff0000'
     white: '#ffffff'
-    yellow: '#fffed5'
+    yellow: '#ffff00'
   cursor:
-    cursor: '#00ff9c'
+    cursor: '#bbbbbb'
     text: '#ffffff'
   normal:
-    black: '#080808'
-    blue: '#0071cf'
-    cyan: '#6bffdd'
-    green: '#00c172'
-    magenta: '#ff90fe'
-    red: '#ff8373'
-    white: '#f1f1f1'
-    yellow: '#d2a700'
+    black: '#000000'
+    blue: '#0081ff'
+    cyan: '#008b8b'
+    green: '#008b00'
+    magenta: '#bc00ca'
+    red: '#9f0000'
+    white: '#bbbbbb'
+    yellow: '#ffd000'
   primary:
-    background: '#151144'
-    foreground: '#00ff92'
+    background: '#000000'
+    foreground: '#00a595'
   selection:
-    background: '#454d96'
-    text: '#f4f4f4'
+    background: '#00a48c'
+    text: '#3de1c9'
