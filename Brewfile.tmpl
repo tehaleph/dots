@@ -29,3 +29,7 @@ cask "discord"
 cask "firefox-nightly"
 cask "font-jetbrains-mono"
 cask "google-chrome"
+
+{{- if eq .chezmoi.os "darwin" }}
+brew "pinentry-mac"
+{{- end }}
