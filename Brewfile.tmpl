@@ -12,6 +12,7 @@ brew "chezmoi"
 brew "fish"
 brew "git-flow-avh"
 brew "pinentry"
+brew "pinentry-mac"
 brew "gnupg"
 brew "poppler"
 brew "python"
@@ -19,17 +20,21 @@ brew "ranger"
 brew "tmux"
 brew "unrar"
 brew "beeftornado/rmtree/brew-rmtree"
-brew "d12frosted/emacs-plus/emacs-plus@26", link: false
+brew "d12frosted/emacs-plus/emacs-plus@28"
 brew "github/gh/gh"
 brew "koekeishiya/formulae/skhd"
 brew "koekeishiya/formulae/yabai"
 cask "1password"
 cask "alacritty"
-cask "discord"
-cask "firefox-nightly"
 cask "font-jetbrains-mono"
-cask "google-chrome"
 
-{{- if eq .chezmoi.os "darwin" }}
-brew "pinentry-mac"
+
+{{- if eq .target "home" }}
+tap "dart-lang/dart"
+
+brew "dart-lang/dart/dart"
+
+cask "firefox-nightly"
+cask "discord"
+cask "google-chrome"
 {{- end }}
