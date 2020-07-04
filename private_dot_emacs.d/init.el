@@ -1,11 +1,9 @@
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-(require 'evil)
 (package-initialize)
 
 (menu-bar-mode t)
 (projectile-mode +1)
-(evil-mode 1)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
