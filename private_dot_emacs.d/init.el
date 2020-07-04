@@ -1,8 +1,11 @@
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(require 'evil)
 (package-initialize)
 
 (menu-bar-mode t)
+(projectile-mode +1)
+(evil-mode 1)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -17,7 +20,6 @@
  ;; If there is more than one, they won't work right.
  )
 
-(projectile-mode +1)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
 (load-theme 'dracula t)
