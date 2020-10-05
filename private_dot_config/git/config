@@ -1,6 +1,6 @@
 [core]
-        editor = vim
-        excludesfile = ~/.gitignore_global
+	editor = vim
+	excludesfile = ~/.gitignore_global
 [user]
 	signingkey = 0A541ABEE37D15EF
 	name = Mikhail Shlyakhov
