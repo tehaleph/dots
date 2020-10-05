@@ -8,6 +8,8 @@ font:
   normal:
     family: JetBrains Mono
     style: Regular
+key_bindings:
+  - { key: K,      mods: Command,            action: ClearHistory     }
 # Colors (ENCOM)
 colors:
   bright:
