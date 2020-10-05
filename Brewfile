@@ -29,7 +29,6 @@ brew "tig"
 brew "tmux"
 brew "unrar"
 brew "beeftornado/rmtree/brew-rmtree"
-brew "d12frosted/emacs-plus/emacs-plus@27", link: false
 brew "d12frosted/emacs-plus/emacs-plus@28", link: false
 brew "dart-lang/dart/dart"
 brew "koekeishiya/formulae/skhd"
