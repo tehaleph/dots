@@ -1,6 +1,5 @@
 set number
 syntax on
-set autoindent
-set expandtab
+set list
 set visualbell
 set scrolloff=999
