@@ -1,5 +1,10 @@
 set number
+set ruler
+
 syntax on
+
+set confirm
+
 set list
 set visualbell
-set scrolloff=5
+set so=5
