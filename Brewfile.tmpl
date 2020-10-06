@@ -32,17 +32,20 @@ brew "tmux"
 brew "unrar"
 brew "beeftornado/rmtree/brew-rmtree"
 brew "d12frosted/emacs-plus/emacs-plus@28", link: false
-brew "dart-lang/dart/dart"
+{{- if eq .target "home" }}
 brew "koekeishiya/formulae/skhd"
 brew "koekeishiya/formulae/yabai"
+{{- end }}
 cask "1password"
-cask "adobe-creative-cloud"
 cask "alacritty"
 cask "discord"
 cask "firefox-nightly"
 cask "font-jetbrains-mono"
 cask "google-chrome"
-cask "pycharm-ce"
 cask "spotify"
 cask "sublime-merge"
+{{- if eq .target "home" }}
+cask "adobe-creative-cloud"
+cask "pycharm-ce"
 cask "tor-browser"
+{{- end }}
