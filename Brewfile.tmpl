@@ -8,7 +8,9 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
+{{- if eq .target "home" }}
 tap "koekeishiya/formulae"
+{{- end }}
 brew "chezmoi"
 brew "findutils"
 brew "fish"
