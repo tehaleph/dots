@@ -1,0 +1,6 @@
+[sourceVCS]
+autoCommit = true
+autoPush = true
+
+[data]
+target = "home"
