@@ -48,14 +48,10 @@
     (= day last-day-of-month)))
 
 ;; Backup files
-(setq
-   backup-by-copying t
-   backup-directory-alist '(("." . "~/.emacs-tmp"))
-   auto-save-file-name-transforms '(("." . "~/.emacs-tmp"))
-   delete-old-versions t
-   kept-new-versions 6
-   kept-old-versions 2
-   version-control t)
+(setq backup-directory-alist
+          `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+          `((".*" ,temporary-file-directory t)))
 ;; Org-roam
 (setq org-roam-directory "~/zettelkasten")
 (setq org-roam-graph-executable "/usr/local/bin/dot")
