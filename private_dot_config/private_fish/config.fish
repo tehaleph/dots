@@ -1,1 +1,1 @@
-set -xU EDITOR emacs
+set -xU EDITOR emacs -nw
