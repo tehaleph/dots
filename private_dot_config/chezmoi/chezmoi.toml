@@ -1,9 +1,0 @@
-[sourceVCS]
-  autoCommit = true
-  autoPush = true
-
-[data]
-  target = "home"
-
-[gpg]
-  recipient = "mike@aleph.space"
