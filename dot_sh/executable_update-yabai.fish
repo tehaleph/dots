@@ -1,4 +1,4 @@
-#!fish
+#!/usr/bin/env fish
 
 # stop, upgrade, start yabai
 brew services stop yabai
