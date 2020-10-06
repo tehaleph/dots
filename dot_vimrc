@@ -5,6 +5,5 @@ syntax on
 
 set confirm
 
-set list
 set visualbell
-set so=5
+set so=999
