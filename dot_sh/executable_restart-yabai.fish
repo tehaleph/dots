@@ -1,5 +1,4 @@
-#!fish
-
+#!/usr/bin/env fish
 sudo yabai --uninstall-sa
 sudo yabai --install-sa
 
