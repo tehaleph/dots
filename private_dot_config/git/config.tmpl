@@ -2,10 +2,14 @@
 	editor = vim
 	excludesfile = ~/.gitignore_global
 [user]
+	email = {{ .email }}
+	{{- if eq .target "home" }}
 	signingkey = 0A541ABEE37D15EF
 	name = Mikhail Shlyakhov
-	email = {{ .email }}
+	{{- end }}
+{{- if eq .target "home" }}
 [gpg]
 	program = gpg
 [commit]
 	gpgsign = true
+{{- end }}
