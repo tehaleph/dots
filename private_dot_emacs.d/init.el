@@ -18,7 +18,7 @@
  ;; If there is more than one, they won't work right.
  '(org-agenda-files '("~/org/cleaning.org" "~/org/bday.org" "~/org/fin.org"))
  '(package-selected-packages
-   '(magit org-roam go-mode elpy neotree projectile dracula-theme)))
+   '(quickrun magit org-roam go-mode elpy neotree projectile dracula-theme)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -49,16 +49,13 @@
 
 ;; Backup files
 (setq
-   backup-by-copying t      ; don't clobber symlinks
-   backup-directory-alist '((".*" . "~/.emacs-tmp/"))    ; don't litter my fs tree
-   auto-save-file-name-transforms '((".*" . "~/emacs-tmp/")) 
+   backup-by-copying t
+   backup-directory-alist '(("." . "~/.emacs-tmp"))
+   auto-save-file-name-transforms '(("." . "~/.emacs-tmp"))
    delete-old-versions t
    kept-new-versions 6
    kept-old-versions 2
-   version-control t)       ; use versioned backups
-
-(setq backup-directory-alist `(("." . "~/.emacs-tmp")))
-
+   version-control t)
 ;; Org-roam
 (setq org-roam-directory "~/zettelkasten")
 (setq org-roam-graph-executable "/usr/local/bin/dot")
