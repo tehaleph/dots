@@ -52,10 +52,16 @@
           `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
           `((".*" ,temporary-file-directory t)))
+
 ;; Org-roam
 (setq org-roam-directory "~/zettelkasten")
 (setq org-roam-graph-executable "/usr/local/bin/dot")
 (setq org-roam-graph-viewer "/Applications/Firefox Nightly.app/Contents/MacOS/firefox")
+
+(setq org-roam-dailies-capture-templates '(("d" "daily" plain (function org-roam-capture--get-point) ""
+    :immediate-finish t 
+    :file-name "dailies/%<%Y-%m-%d>" 
+    :head "#+TITLE: %<%Y-%m-%d>")))
 
 ;; Org-fc
 (add-to-list 'load-path "~/dev/github/org-fc/")
