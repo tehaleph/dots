@@ -1,6 +1,9 @@
 (setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
 (setq exec-path (append exec-path '("/usr/local/bin")))
 
+;; Spellchecker
+(setenv "DICTIONARY" "en_US")
+
 ;; Packages
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
@@ -33,6 +36,7 @@
 
 ;; Keys
 (global-set-key [f8] 'neotree-toggle)
+(global-set-key (kbd "C-c C-d t") 'org-roam-dailies-today)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
 (load-theme 'dracula t)
@@ -52,15 +56,14 @@
           `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
           `((".*" ,temporary-file-directory t)))
-
 ;; Org-roam
 (setq org-roam-directory "~/zettelkasten")
 (setq org-roam-graph-executable "/usr/local/bin/dot")
 (setq org-roam-graph-viewer "/Applications/Firefox Nightly.app/Contents/MacOS/firefox")
 
 (setq org-roam-dailies-capture-templates '(("d" "daily" plain (function org-roam-capture--get-point) ""
-    :immediate-finish t 
-    :file-name "dailies/%<%Y-%m-%d>" 
+    :immediate-finish t
+    :file-name "dailies/%<%Y-%m-%d>"
     :head "#+TITLE: %<%Y-%m-%d>")))
 
 ;; Org-fc
