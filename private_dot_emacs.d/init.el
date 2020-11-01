@@ -19,7 +19,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-agenda-files '("~/org/cleaning.org" "~/org/bday.org" "~/org/fin.org"))
  '(package-selected-packages
    '(quickrun magit org-roam go-mode elpy neotree projectile dracula-theme)))
 (custom-set-faces
