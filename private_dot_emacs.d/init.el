@@ -7,10 +7,10 @@
 ;; Packages
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(require 'use-package)
 
 ;; Neotree
 (require 'neotree)
-
 
 (package-initialize)
 
@@ -19,8 +19,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(line-number-mode nil)
  '(package-selected-packages
-   '(quickrun magit org-roam go-mode elpy neotree projectile dracula-theme)))
+   '(company-go lsp-ui use-package lsp-mode quickrun magit org-roam go-mode elpy neotree projectile dracula-theme)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -29,7 +30,6 @@
  )
 
 ;; Modes
-(menu-bar-mode t)
 (projectile-mode +1)
 (elpy-enable)
 
@@ -71,3 +71,35 @@
 (require 'org-fc)
 
 (setq org-fc-directories '("~/zettelkasten/"))
+
+;; Appearance
+(menu-bar-mode -1)
+(toggle-scroll-bar -1)
+(tool-bar-mode -1)
+(setq initial-buffer-choice "~/zettelkasten")
+
+;; gopls
+(use-package lsp-mode
+  :ensure t
+  :commands (lsp lsp-deferred)
+  :hook (go-mode . lsp-deferred))
+
+;; Set up before-save hooks to format buffer and add/delete imports.
+;; Make sure you don't have other gofmt/goimports hooks enabled.
+(defun lsp-go-install-save-hooks ()
+  (add-hook 'before-save-hook #'lsp-format-buffer t t)
+  (add-hook 'before-save-hook #'lsp-organize-imports t t))
+(add-hook 'go-mode-hook #'lsp-go-install-save-hooks)
+
+;; Optional - provides fancier overlays.
+(use-package lsp-ui
+  :ensure t
+  :commands lsp-ui-mode)
+
+;; Company mode is a standard completion package that works well with lsp-mode.
+(use-package company
+  :ensure t
+  :config
+  ;; Optionally enable completion-as-you-type behavior.
+  (setq company-idle-delay 0)
+  (setq company-minimum-prefix-length 1))
