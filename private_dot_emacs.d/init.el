@@ -1,5 +1,10 @@
-(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
+;; PATH
+(setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
+(setenv "PATH" (concat "~/go/bin:" (getenv "PATH")))
+
+;; exec-path
 (setq exec-path (append exec-path '("/usr/local/bin")))
+(setq exec-path (append exec-path '("~/go/bin")))
 
 ;; Spellchecker
 (setenv "DICTIONARY" "en_US")
