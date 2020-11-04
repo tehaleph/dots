@@ -16,6 +16,9 @@
 
 ;; Neotree
 (require 'neotree)
+;; Disable line-numbers minor mode for neotree
+(add-hook 'neo-after-create-hook (lambda (&optional dummy) (display-line-numbers-mode -1)))
+
 
 (package-initialize)
 
@@ -24,7 +27,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(line-number-mode nil)
  '(package-selected-packages
    '(company-go lsp-ui use-package lsp-mode quickrun magit org-roam go-mode elpy neotree projectile dracula-theme)))
 (custom-set-faces
@@ -37,6 +39,7 @@
 ;; Modes
 (projectile-mode +1)
 (elpy-enable)
+(global-display-line-numbers-mode)
 
 ;; Keys
 (global-set-key [f8] 'neotree-toggle)
