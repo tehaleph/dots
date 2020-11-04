@@ -6,6 +6,10 @@
 (setq exec-path (append exec-path '("/usr/local/bin")))
 (setq exec-path (append exec-path '("~/go/bin")))
 
+;; Font
+(add-to-list 'default-frame-alist '(font . "JetBrains Mono"))
+(set-face-attribute 'default t :font "JetBrains Mono")
+
 ;; Spellchecker
 (setenv "DICTIONARY" "en_US")
 
