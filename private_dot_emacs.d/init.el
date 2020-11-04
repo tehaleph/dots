@@ -31,8 +31,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(line-number-mode 1)
  '(package-selected-packages
-   '(company-go lsp-ui use-package lsp-mode quickrun magit org-roam go-mode elpy neotree projectile dracula-theme)))
+   '(godoctor company-go lsp-ui use-package lsp-mode quickrun magit org-roam go-mode elpy neotree projectile dracula-theme)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -115,3 +116,17 @@
   ;; Optionally enable completion-as-you-type behavior.
   (setq company-idle-delay 0)
   (setq company-minimum-prefix-length 1))
+
+;; godoctor
+(use-package go-mode
+  :config (use-package godoctor))
+
+;; switch to previous buffer
+(defun kb-switch-to-previous-buffer ()
+  "Switch to previously open buffer.
+Repeated invocations toggle between the two most recently open buffers."
+  (interactive)
+  (switch-to-buffer (other-buffer (current-buffer) 1)))
+
+(global-set-key (kbd "s-[") #'kb-switch-to-previous-buffer)
+
