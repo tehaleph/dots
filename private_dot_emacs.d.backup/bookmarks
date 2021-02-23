@@ -1,0 +1,10 @@
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*-
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("org-capture-last-stored"
+ (filename . "~/zettelkasten/20201228003522-golang_json_export_struct.org")
+ (front-context-string . "#+title: Golang ")
+ (rear-context-string)
+ (position . 1))
+)
