@@ -52,3 +52,16 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+(use-package! org-roam
+  :ensure t
+  :hook
+  (after-init . org-roam-mode)
+  :custom
+  (org-roam-directory "~/zettelkasten")
+  ;;(org-roam-graph-executable "/usr/local/bin/dot")
+  (org-roam-graph-viewer "/Applications/Firefox Nightly.app/Contents/MacOS/firefox")
+  :bind (:map org-roam-mode-map
+         (("C-c n l" . org-roam)
+          ("C-c n f" . org-roam-find-file)
+          ("C-c n g" . org-roam-graph))))
