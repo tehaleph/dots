@@ -1,0 +1,37 @@
+# Windows
+Thumbs.db
+Desktop.ini
+ 
+# Mac OS X
+.DS_Store
+._*
+ 
+# Vim
+*.swp
+ 
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+ 
+# Eclipse PDT
+.project
+.classpath
+.buildpath
+.settings/
+ 
+# Composer
+composer.phar
+/vendor
+ 
+# Tutu tools (meta + ptst)
+rm_autoload.php
+/t/reports/
+/t/logs/
+/t/tmp/
+/tmp/
+
+# VSCode
+.vscode/
+.env
