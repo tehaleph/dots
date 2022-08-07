@@ -1,3 +1,8 @@
+encryption = age
+
+[age]
+    identity = "~/age.txt"
+
 [git]
     autoCommit = true
     autoPush = true
