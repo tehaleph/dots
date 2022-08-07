@@ -2,6 +2,7 @@ encryption = "age"
 
 [age]
     identity = "~/.age/chezmoi.key"
+    recipient = "age1uh8j4ckglpfxr4j69g05v6h9madzqvl6tu8mt0n7eams6ledeufq2s3405"
 
 [git]
     autoCommit = true
