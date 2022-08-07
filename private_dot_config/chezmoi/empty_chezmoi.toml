@@ -1,4 +1,4 @@
-encryption = age
+encryption = "age"
 
 [age]
     identity = "~/age.txt"
