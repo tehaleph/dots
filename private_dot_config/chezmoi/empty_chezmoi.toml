@@ -1,7 +1,7 @@
 encryption = "age"
 
 [age]
-    identity = "~/age.txt"
+    identity = "~/.age/chezmoi.key"
 
 [git]
     autoCommit = true
