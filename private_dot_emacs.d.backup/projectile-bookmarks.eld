@@ -1,1 +1,0 @@
-("~/zettelkasten/" "~/dev/aleph/marmoset/" "~/.local/share/chezmoi/" "~/org/" "~/dev/github/org-fc/")

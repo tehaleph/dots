@@ -1,9 +1,0 @@
-set number
-set ruler
-
-syntax on
-
-set confirm
-
-set visualbell
-set so=999
