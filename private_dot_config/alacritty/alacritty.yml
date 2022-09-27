@@ -10,32 +10,32 @@ font:
     style: Regular
 scrolling:
   history: 100000
-# Colors (BlueBerryPie)
+# Colors (Dracula)
 colors:
   bright:
-    black: '#201637'
-    blue: '#39173d'
-    cyan: '#5e6071'
-    green: '#0a6c7e'
-    magenta: '#bc94b7'
-    red: '#c87272'
-    white: '#0a6c7e'
-    yellow: '#7a3188'
+    black: '#555555'
+    blue: '#bd93f9'
+    cyan: '#8be9fd'
+    green: '#50fa7b'
+    magenta: '#ff79c6'
+    red: '#ff5555'
+    white: '#ffffff'
+    yellow: '#f1fa8c'
   cursor:
-    cursor: '#fcfad6'
-    text: '#000000'
+    cursor: '#bbbbbb'
+    text: '#ffffff'
   normal:
-    black: '#0a4c62'
-    blue: '#90a5bd'
-    cyan: '#7e83cc'
-    green: '#5cb1b3'
-    magenta: '#9d54a7'
-    red: '#99246e'
-    white: '#f0e8d6'
-    yellow: '#eab9a8'
+    black: '#000000'
+    blue: '#bd93f9'
+    cyan: '#8be9fd'
+    green: '#50fa7b'
+    magenta: '#ff79c6'
+    red: '#ff5555'
+    white: '#bbbbbb'
+    yellow: '#f1fa8c'
   primary:
-    background: '#1c0c28'
-    foreground: '#babab9'
+    background: '#1e1f29'
+    foreground: '#f8f8f2'
   selection:
-    background: '#606060'
+    background: '#44475a'
     text: '#ffffff'
