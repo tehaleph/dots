@@ -2,7 +2,7 @@ window:
   padding: 
     x: 10 
     y: 10
-  opacity: 0.8
+  opacity: 0.9
 font:
   size: 14.0
   normal:
