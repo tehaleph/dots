@@ -1,5 +1,14 @@
 return {
-    "yorik1984/newpaper.nvim",
+    "catppuccin/nvim",
+    lazy = true,
     priority = 1000,
-    config = true
+    name = "catppuccin",
+    opts = {
+        flavour = "latte",
+	integrations = {
+            treesitter_context = true,
+            telescope = { enabled = true },
+            treesitter = true,
+        }
+    }
 }

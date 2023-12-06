@@ -1,10 +1,19 @@
 {
+  "LuaSnip": { "branch": "master", "commit": "954c81b53989097faaff0fabc11c29575288c3e1" },
+  "catppuccin": { "branch": "main", "commit": "988c0b2dde4140572ed37c6b8b5d5deac0219f9f" },
+  "cmp-nvim-lsp": { "branch": "main", "commit": "44b16d11215dce86f253ce0c30949813c0a90765" },
+  "cmp_luasnip": { "branch": "master", "commit": "05a9ab28b53f71d1aece421ef32fee2cb857a843" },
+  "fidget.nvim": { "branch": "main", "commit": "08c4e13678303edc7a0bb3c185d74a793fef3ef1" },
   "go.nvim": { "branch": "master", "commit": "7b7c20029a817ef51f6b498388488e9850fe45ac" },
-  "guihua.lua": { "branch": "master", "commit": "cd68996069abedffcd677ca7eee3a660b79e5b32" },
+  "guihua.lua": { "branch": "master", "commit": "9fb6795474918b492d9ab01b1ebaf85e8bf6fe0b" },
   "lazy.nvim": { "branch": "main", "commit": "96584866b9c5e998cbae300594d0ccfd0c464627" },
-  "newpaper.nvim": { "branch": "main", "commit": "9d561c670e5139875fbf181f9b2a7813c052ef27" },
-  "nvim-lspconfig": { "branch": "master", "commit": "694aaec65733e2d54d393abf80e526f86726c988" },
-  "nvim-treesitter": { "branch": "master", "commit": "80a16deb5146a3eb4648effccda1ab9f45e43e76" },
+  "mason-lspconfig.nvim": { "branch": "main", "commit": "9453e3d6cd2ca45d96e20f343e8f1b927364b630" },
+  "mason.nvim": { "branch": "main", "commit": "41e75af1f578e55ba050c863587cffde3556ffa6" },
+  "nvim-cmp": { "branch": "main", "commit": "0b751f6beef40fd47375eaf53d3057e0bfa317e4" },
+  "nvim-lspconfig": { "branch": "master", "commit": "6c797ff9324094e333e2ace9526ca4a62ad9d1ca" },
+  "nvim-treesitter": { "branch": "master", "commit": "c203884c80ef31b6a3993398734fbe008addcb27" },
+  "nvim-web-devicons": { "branch": "master", "commit": "5efb8bd06841f91f97c90e16de85e96d57e9c862" },
   "plenary.nvim": { "branch": "master", "commit": "55d9fe89e33efd26f532ef20223e5f9430c8b0c0" },
-  "telescope.nvim": { "branch": "master", "commit": "7011eaae0ac1afe036e30c95cf80200b8dc3f21a" }
+  "telescope.nvim": { "branch": "master", "commit": "7011eaae0ac1afe036e30c95cf80200b8dc3f21a" },
+  "trouble.nvim": { "branch": "main", "commit": "f1168feada93c0154ede4d1fe9183bf69bac54ea" }
 }
