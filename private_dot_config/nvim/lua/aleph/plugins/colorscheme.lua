@@ -4,7 +4,7 @@ return {
     priority = 1000,
     name = "catppuccin",
     opts = {
-        flavour = "latte",
+        flavour = "frappe",
 	integrations = {
             treesitter_context = true,
             telescope = { enabled = true },
