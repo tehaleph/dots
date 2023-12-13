@@ -4,7 +4,7 @@ window:
 font:
   size: 14.0
   normal:
-    family: Fira Code
+    family: FiraCode Nerd Font
     style: Regular
 scrolling:
   history: 100000
