@@ -10,10 +10,6 @@ cmp.setup({
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-lspconfig.golangci_lint_ls.setup{
-	capabilities = capabilities,
-}
-
 lspconfig.gopls.setup{
 	capabilities = capabilities,
 	settings = {
