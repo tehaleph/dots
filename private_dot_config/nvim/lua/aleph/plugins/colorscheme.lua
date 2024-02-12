@@ -9,7 +9,7 @@ return {
 		dark = "frappe",
 		light = "latte",
 	},
-	transparent_background = true,
+	transparent_background = false,
 	integrations = {
             treesitter_context = true,
             telescope = { enabled = true },
