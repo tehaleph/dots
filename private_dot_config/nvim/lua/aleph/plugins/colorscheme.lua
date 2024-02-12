@@ -4,9 +4,10 @@ return {
     priority = 1000,
     name = "catppuccin",
     opts = {
-        flavour = "frappe",
+        flavour = "latte",
 	background = {
-		dark = "frappe"
+		dark = "frappe",
+		light = "latte",
 	},
 	transparent_background = true,
 	integrations = {
