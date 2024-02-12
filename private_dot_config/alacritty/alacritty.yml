@@ -1,6 +1,9 @@
 window: 
   decorations: none
   opacity: 0.95
+  padding:
+    x: 10
+    y: 10
 font:
   size: 14.0
   normal:
