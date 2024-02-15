@@ -38,6 +38,9 @@ lspconfig.gopls.setup{
 }
 
 lspconfig.golangci_lint_ls.setup {
-	filetypes = {'go','gomod'}
+	capabilities = capabilities,
+	root_dir = function(fname)
+		return util.root_pattern('go.work', 'go.mod', '.git')(fname)
+	end,
 }
 
