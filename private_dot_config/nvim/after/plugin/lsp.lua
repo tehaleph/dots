@@ -37,4 +37,7 @@ lspconfig.gopls.setup{
 	}
 }
 
+lspconfig.golangci_lint_ls.setup {
+	filetypes = {'go','gomod'}
+}
 
