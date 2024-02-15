@@ -4,12 +4,12 @@ return {
     priority = 1000,
     name = "catppuccin",
     opts = {
-        flavour = "frappe",
+        flavour = "mocha",
 	background = {
-		dark = "frappe",
+		dark = "mocha",
 		light = "latte",
 	},
-	transparent_background = false,
+	transparent_background = true,
 	integrations = {
             treesitter_context = true,
             telescope = { enabled = true },
