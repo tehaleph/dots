@@ -358,4 +358,4 @@ ui {
   }
 }
 
-default_shell "fish"
+default_shell $SHELL
