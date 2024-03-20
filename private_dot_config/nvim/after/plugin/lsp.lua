@@ -2,17 +2,26 @@ local lspconfig = require("lspconfig")
 local util = require("lspconfig/util")
 local cmp = require('cmp')
 
+local border = "rounded"
+
 cmp.setup({
 	snippet = {
 		expand = function(args)
 			require('luasnip').lsp_expand(args.body)
 		end,
  	},
-	sources = cmp.config.sources({
-		{ name = "nvim_lsp" }
-	}, {
-		{ name = "buffer" }
-	}),
+	sources = cmp.config.sources(
+		{
+			{ name = "nvim_lsp" }
+		},
+		{
+			{ name = "buffer" }
+		}
+	),
+	window = {
+		completion = cmp.config.window.bordered(),
+		documentation = cmp.config.window.bordered()
+	},
 	mapping = cmp.mapping.preset.insert({
 		['<C-b>'] = cmp.mapping.scroll_docs(-4),
 		['<C-f>'] = cmp.mapping.scroll_docs(4),
@@ -44,3 +53,15 @@ lspconfig.golangci_lint_ls.setup {
 	end,
 }
 
+
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
+  vim.lsp.handlers.hover, {
+    border = border
+  }
+)
+
+vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(
+  vim.lsp.handlers.signature_help, {
+    border = border
+  }
+)
