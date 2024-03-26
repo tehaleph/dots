@@ -39,3 +39,4 @@ include light-256.theme
 #include solarized-light-256.theme
 #include no-color.theme
 
+uda.size.type=string
