@@ -14,3 +14,4 @@ uda.size.default=big
 # Size
 urgency.uda.size.small.coefficient=12
 urgency.user.project.interview.coefficient=10
+news.version=2.6.0
