@@ -8,7 +8,6 @@ vim.wo.so = 999
 vim.opt.list = true
 
 chars = {}
-chars.tab = "|->"
-chars.space = "."
+chars.tab = "|  "
 
 vim.opt.listchars:append(chars)
