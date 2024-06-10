@@ -4,7 +4,7 @@ return {
 	priority = 1000,
 	name = "catppuccin",
 	opts = {
-		flavour = "latte",
+		flavour = "mocha",
 		background = {
 			dark = "mocha",
 			light = "latte",
@@ -14,6 +14,11 @@ return {
 			treesitter_context = true,
 			telescope = { enabled = true },
 			treesitter = true,
+			hop = true,
+			gitsigns = true,
+			lsp_saga = true,
+			lsp_trouble = true,
+			which_key = true,
 		},
 	},
 }

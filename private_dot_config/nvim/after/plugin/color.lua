@@ -4,3 +4,5 @@ function ColorMyPencils(color)
 end
 
 ColorMyPencils()
+
+vim.wo.so = 999

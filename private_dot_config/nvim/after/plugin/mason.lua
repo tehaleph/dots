@@ -9,6 +9,7 @@ require("mason").setup({
 			package_uninstalled = "",
 		},
 	},
+	PATH = "skip"
 })
 
 masonlspconfig.setup()

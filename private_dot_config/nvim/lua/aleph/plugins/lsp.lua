@@ -15,9 +15,10 @@ return {
 		},
 	},
 	{
-		"ray-x/navigator.lua",
+		"nvimdev/lspsaga.nvim",
 		dependencies = {
-			"ray-x/guihua.lua",
+			'nvim-treesitter/nvim-treesitter', -- optional
+			'nvim-tree/nvim-web-devicons',     -- optional
 		},
-	},
+	}
 }
