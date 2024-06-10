@@ -1,5 +1,7 @@
 set number
 set relativenumber
+
 syntax on
+
 set visualbell
 set scrolloff=999
