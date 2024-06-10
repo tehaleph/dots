@@ -14,7 +14,9 @@ issues:
       source: "\\.With\\("
 
 output:
-  format: colored-line-number
+  formats:
+    - format: colored-tab
+      path: stdout
   print-issued-lines: true
   print-linter-name: true
   uniq-by-line: true
