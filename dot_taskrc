@@ -2,7 +2,7 @@
 data.location=~/.task
 
 # Theme
-include dark-violets-256.theme
+include light-256.theme
 
 # Size attribute
 uda.size.type=string
