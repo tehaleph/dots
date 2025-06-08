@@ -4,14 +4,4 @@ data.location=~/.task
 # Theme
 include dark-violets-256.theme
 
-# Size attribute
-uda.size.type=string
-uda.size.label=size
-uda.size.values=epic,big,small
-uda.size.default=big
-
-# UDA urgency rules
-# Size
-urgency.uda.size.small.coefficient=12
-urgency.user.project.interview.coefficient=10
-news.version=2.6.0
+news.version=3.3.0
