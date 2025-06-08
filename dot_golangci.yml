@@ -1,36 +1,87 @@
+version: "2"
 run:
-  concurrency: 4
-  timeout: 1m
-  issues-exit-code: 1
   tests: false
-  modules-download-mode: readonly
-  allow-parallel-runners: false
-
-issues:
-  new: false
-  exclude-rules:
-    - linters:
-        - lll
-      source: "\\.With\\("
-
-output:
-  formats:
-    - format: colored-tab
-      path: stdout
-  print-issued-lines: true
-  print-linter-name: true
-  uniq-by-line: true
-
 linters:
-  enable-all: true
-  disable:
-    - tagalign
-    - tagliatelle
-    - maligned
-    - exhaustivestruct
-    - nolintlint
-    - exhaustruct
-    - varnamelen
-    - depguard
-    - godot
-    - nosnakecase
+  default: none
+  enable:
+    - asciicheck
+    - bidichk
+    - bodyclose
+    - contextcheck
+    - copyloopvar
+    - cyclop
+    - decorder
+    - durationcheck
+    - err113
+    - errcheck
+    - errchkjson
+    - errname
+    - errorlint
+    - forbidigo
+    - forcetypeassert
+    - gochecknoglobals
+    - gochecknoinits
+    - goconst
+    - gocritic
+    - godox
+    - gosec
+    - govet
+    - ineffassign
+    - lll
+    - makezero
+    - misspell
+    - mnd
+    - nestif
+    - nilerr
+    - nlreturn
+    - noctx
+    - nonamedreturns
+    - paralleltest
+    - prealloc
+    - promlinter
+    - protogetter
+    - rowserrcheck
+    - sqlclosecheck
+    - staticcheck
+    - testpackage
+    - unconvert
+    - unparam
+    - unused
+    - usestdlibvars
+    - whitespace
+    - wsl
+    - zerologlint
+  settings:
+    cyclop:
+      max-complexity: 20
+    decorder:
+      dec-order:
+        - const
+        - var
+        - type
+        - func
+    lll:
+      line-length: 150
+  exclusions:
+    generated: lax
+    presets:
+      - comments
+      - common-false-positives
+      - legacy
+      - std-error-handling
+    paths:
+      - third_party$
+      - builtin$
+      - examples$
+formatters:
+  enable:
+    - gci
+    - gofmt
+    - gofumpt
+    - goimports
+  exclusions:
+    generated: lax
+    paths:
+      - third_party$
+      - builtin$
+      - examples$
